@@ -1,0 +1,84 @@
+.card-holder {
+  height: 20rem;
+  background-color: #f2f4f6;
+  border-radius: 19px;
+  background: #f2f4f6;
+  box-shadow: -24px 24px 48px #e1e3e5, 24px -24px 48px #ffffff;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 2rem;
+  width: 15rem;
+  @media only screen and (max-width: 764px) {
+    width: 34rem;
+    margin: 1rem;
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-grow: 1;
+  @media only screen and (max-width: 764px) {
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.content {
+  width: 200px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  color: #1b2d45;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card-title {
+  position: relative;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  color: #00214d;
+}
+
+.more-info-button {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  font-size: 15px;
+  background-color: #00ebc7;
+
+  color: #00214d;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fffffe;
+    color: #1b2d45;
+    border: 1px solid #00214d;
+    box-shadow: -10px 10px 0px 0px #00214d;
+    transition: all 0.1s ease-in;
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: -5px 5px 0px 0px #00214d;
+  }
+}
+
+.btn-holder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
